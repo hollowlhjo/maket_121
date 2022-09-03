@@ -1,14 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     scroll-behavior: smooth;
 }
-
 header {
-    padding: 0 80px;
+        margin: 50px;  
 }
-
 .main_menu {
     display: flex;
     justify-content: space-around;
@@ -16,11 +13,20 @@ header {
     padding-bottom: 42px;
     border-bottom: 2px solid #000000;
 }
-
+.main_menu_item{
+    background-color: rgb(255, 255, 255);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
 .main_menu_item_link {
     color: #1a1a1a;
     text-decoration: none;
     text-transform: uppercase;
+}
+.main_menu_item:hover{
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
 }
 
 .main {
@@ -34,7 +40,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 100%;
+    width: auto;
     padding-top: 38px;
     padding-bottom: 30px;
 }
@@ -76,6 +82,7 @@ h1 {
 .about_title {
     font-size: 35px;
     margin-bottom: 20px;
+    font-family: 'Mouse Memoirs', sans-serif;
 }
 
 .about_text {
